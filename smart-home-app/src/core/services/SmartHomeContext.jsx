@@ -2,7 +2,7 @@
 import {createContext, useContext, useEffect, useState} from 'react';
 import {createMockSmartHome} from '../domain/models/types';
 
-const SmartHomeContext = createContext(null);
+export const SmartHomeContext = createContext(null);
 
 export const useSmartHome = () => {
     const context = useContext(SmartHomeContext);
